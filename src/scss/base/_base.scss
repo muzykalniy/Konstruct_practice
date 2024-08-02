@@ -1,34 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800); // через Гугл фонтс внтри ВС кода подключаем
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap');
+// через Гугл фонтс внтри ВС кода подключаем
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue:regular&display=swap');
 
 html {
-	scroll-behavior: smooth;
-	background-color: rgb(39, 39, 39);
+  scroll-behavior: smooth;
+  background-color: rgb(39, 39, 39);
+  height: 100%;
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
-	font-family: var(--font-main);
-	text-wrap: balance;
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main), serif;
+  text-wrap: balance;
+
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 a {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
-code {
-	background-color: #e9f1f6;
-	padding: 0.2rem;
-	border-radius: 4px;
-}
 
-pre.code {
-	overflow-x: auto;
-	background-color: #e9f1f6;
-	padding: 1rem;
-	border-radius: 4px;
-}

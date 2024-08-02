@@ -8,7 +8,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 
     @include retina() {
       background-image: url('./../../img/header/bg@2x.jpg');
@@ -54,6 +54,8 @@
 }
 
 .header__row {
+  padding: 24px 0;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;

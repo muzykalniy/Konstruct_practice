@@ -1,0 +1,70 @@
+.about {
+  padding: 58px 0 118px 0;
+}
+
+
+.about_title {
+  margin-bottom: 75px;
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #00a4e5; // Используем background-color вместо color
+    top: 30px; // Положение снизу заголовка
+    left: 47.4%; // Положение слева заголовка
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+
+}
+
+.about__content {
+  width: 405px;
+
+}
+
+.about__desc {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #48555b;
+}
+
+span {
+  letter-spacing: 0.01em;
+  color: #16ace8;
+}
+
+.about__text {
+  margin-top: 30px;
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 177%;
+  letter-spacing: 0.01em;
+  color: #48555b;
+}
+
+.about__collection {
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.about__img {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

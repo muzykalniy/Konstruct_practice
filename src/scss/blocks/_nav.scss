@@ -1,11 +1,20 @@
 .header__nav {
 }
+
 .nav {
-	font-size: 18px;
+  font-family: var(--font-main), serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  color: #48555b;
+  text-transform: uppercase;
 }
+
 .nav__list {
-	display: flex;
-	column-gap: 30px;
+  display: flex;
+  column-gap: 48px;
 }
+
 .active {
 }

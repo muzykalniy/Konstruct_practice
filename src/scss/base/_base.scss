@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  
+
 }
 
 body {
@@ -21,7 +21,12 @@ img {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--text-color);
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
 }
 
 

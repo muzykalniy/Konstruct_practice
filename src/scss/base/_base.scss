@@ -4,8 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(39, 39, 39);
-  height: 100%;
+  
 }
 
 body {
@@ -13,6 +12,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-main), serif;
   text-wrap: balance;
+  height: 100%;
 
 }
 

@@ -28,18 +28,21 @@
 
 }
 
+//GRID
+
 .about__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
-
+  //grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+  grid-template-areas:
+          "title title img1 img2 img3"
+            "text text img1 img2 img3";
 }
 
-.about__content {
-  width: 405px;
-
-}
 
 .about__desc {
+  grid-area: title;
   font-family: var(--font-main);
   font-weight: 700;
   font-size: 20px;
@@ -53,7 +56,9 @@ span {
 }
 
 .about__text {
-  margin-top: 30px;
+  align-self: end;
+  grid-area: text;
+  //margin-top: 30px;
   font-family: var(--font-main), serif;
   font-weight: 400;
   font-size: 13px;
@@ -62,16 +67,26 @@ span {
   color: #48555b;
 }
 
-.about__collection {
-  align-self: end;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  
-
+.about__img01 {
+  grid-area: img1;
 }
 
-.about__img {
+.about__img02 {
+  grid-area: img2;
+}
+
+.about__img03 {
+  grid-area: img3;
+}
+
+.img {
+  padding-top: 20px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: all 0.2s ease-in;
 
   &:hover {
